@@ -1133,9 +1133,9 @@ export default function App() {
                       <label className="checkout-label">State</label>
                       <select className="checkout-input checkout-select" value={addrState} onChange={(e) => { setAddrState(e.target.value); }}>
                         <option value="" disabled>Select state</option>
-                        {usStates.map((s) => (
-                          <option key={s.code} value={s.code}>
-                            {s.name}
+                        {usStates.filter((s) => s.value).map((s) => (
+                          <option key={s.value} value={s.value}>
+                            {s.label}
                           </option>
                         ))}
                       </select>

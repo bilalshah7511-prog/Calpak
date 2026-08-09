@@ -85,20 +85,32 @@ body {
   color: var(--ov-black);
 }
 
-/* Site-wide: original Jost.otf */
-*,
-*::before,
-*::after {
+/* Site-wide: original Jost.otf (never force web fonts onto native <option>) */
+*:not(option),
+*:not(option)::before,
+*:not(option)::after {
   font-family: 'Jost', sans-serif !important;
   font-style: normal !important;
 }
 
 /* Checkout drawer only: Calpak.com reference Jost */
 .cart-drawer,
-.cart-drawer *,
-.cart-drawer *::before,
-.cart-drawer *::after {
+.cart-drawer *:not(option),
+.cart-drawer *:not(option)::before,
+.cart-drawer *:not(option)::after {
   font-family: var(--brand-drawer-font) !important;
+}
+
+/* Native <select> lists must use system font or Windows shows blank/white text */
+.cart-drawer select option,
+.cart-drawer .checkout-select option,
+.checkout-flow select option,
+.checkout-flow--delivery select option {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  color: #111111 !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #111111 !important;
+  opacity: 1 !important;
 }
 
 /* Aa orientation: sentence case, never all-caps — except CHECKOUT CTA */
@@ -645,7 +657,7 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 }
 
 .cart-drawer__progress-bar {
-  background: var(--ov-blue) !important;
+  background: #f7f177 !important;
   border-radius: 0 !important;
   height: 100% !important;
   min-height: 8px;
@@ -1218,7 +1230,7 @@ html.safari-typing .checkout-flow--vv-lock {
   height: 8px !important;
 }
 
-/* Cart drawer only — size control bg */
+/* Cart drawer only — qty / color / size controls: white bg */
 .cart-drawer .cart-control,
 .cart-drawer .cart-control--chip,
 .cart-drawer .cart-control--size,
@@ -1226,8 +1238,8 @@ html.safari-typing .checkout-flow--vv-lock {
 .cart-drawer .size-select__input,
 .cart-drawer .size-select__input:focus,
 .cart-drawer .size-select__input:hover {
-  background: #e5e7df !important;
-  background-color: #e5e7df !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   color: #111111 !important;
   border-color: #111111 !important;
   box-shadow: none !important;
@@ -1235,14 +1247,10 @@ html.safari-typing .checkout-flow--vv-lock {
 }
 
 .cart-drawer .cart-control select option,
-.cart-drawer .size-select__input option {
-  background: #ffffff !important;
-  color: #111111 !important;
-}
-
+.cart-drawer .size-select__input option,
 .cart-drawer .cart-control select option:checked,
 .cart-drawer .size-select__input option:checked {
-  background: #e5e7df !important;
+  background: #ffffff !important;
   color: #111111 !important;
 }
 
@@ -2172,6 +2180,15 @@ overflow-y: auto !important;
   visibility: hidden;
 }
 
+
+/* Delivery selects: black closed-field text */
+.checkout-flow--delivery .checkout-select,
+.checkout-flow--delivery select.checkout-input {
+  color: #111111 !important;
+  background-color: #ffffff !important;
+  color-scheme: light only;
+  -webkit-text-fill-color: #111111;
+}
 
 /* CALPAK: 9px radius on buttons, dropdowns, chips, swatches */
 .add-to-cart-btn,

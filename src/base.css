@@ -2430,7 +2430,7 @@ ul, ol {
 }
 
 .checkout-select option[value=""] {
-  color: rgba(50, 33, 19, 0.5);
+  color: #111111;
 }
 
 .checkout-input:focus {
