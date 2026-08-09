@@ -21,11 +21,10 @@ function cloneAnimation(data) {
 }
 
 /**
- * Timing (slightly slower than check (1).mov — client request):
+ * Timing:
  * - Logo drop ~1.7s
- * - BG fade ~1.65s → #2a54aa
- * - No CSS spinner (client rejected)
- * - Lottie check as logo settles (speed ~1.05)
+ * - BG fade ~1.65s white → black only
+ * - Lottie check as logo settles (white on black)
  */
 const LOGO_MS = 1700;
 const LOGO_SETTLED_MS = 1350;
@@ -38,6 +37,7 @@ const CHECK_AT = LOGO_SETTLED_MS;
 export default function CheckoutLoader({
   open,
   brandLabel = 'CALPAK',
+  logoSrc = '/calpak-logo.png',
   onDone,
 }) {
   const [phase, setPhase] = useState('idle'); // idle | brand | check
@@ -116,9 +116,11 @@ export default function CheckoutLoader({
     >
       <div className="checkout-loader__center">
         <div className={`checkout-loader__brand${brandIn ? ' is-in' : ''}`}>
-          <span className="checkout-loader__wordmark" aria-label={brandLabel}>
-            {brandLabel}
-          </span>
+          <img
+            className="checkout-loader__logo-img"
+            src={logoSrc}
+            alt={brandLabel}
+          />
         </div>
 
         {/* Always reserve height so logo doesn't jump when check appears */}

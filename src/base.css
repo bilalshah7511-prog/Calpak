@@ -669,7 +669,7 @@ ul, ol {
 
 .size-select__input:focus,
 .size-select__wrap:hover .size-select__input {
-  border-color: #944D22;
+  border-color: #111111;
 }
 
 /* Purchase options */
@@ -1232,7 +1232,7 @@ ul, ol {
   width: 90px;
   height: 90px;
   flex: 0 0 90px;
-  border-radius: 0;
+  border-radius: 9px;
   object-fit: contain;
   object-position: center;
   background: #fff;
@@ -1257,9 +1257,11 @@ ul, ol {
   font-family: 'Jost', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.25;
-  color: #111111;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #000000;
+  margin: 0 0 0.3em;
+  display: block;
 }
 
 .cart-item__variant {
@@ -1563,18 +1565,23 @@ ul, ol {
 }
 
 .cart-drawer__checkout {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(100% - 16px);
-  margin: 0 8px;
+  margin: 0 8px 8px;
   background-color: #111111;
   color: #ffffff;
   font-family: 'Jost', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 16px;
   letter-spacing: 0.02em;
-  text-transform: none;
-  padding: 16px 18px;
-  border-radius: 0;
+  text-transform: uppercase;
+  height: 47px;
+  min-height: 47px;
+  padding: 0 18px;
+  box-sizing: border-box;
+  border-radius: 9px;
   border: 2px solid #000000;
   cursor: pointer;
   text-align: center;

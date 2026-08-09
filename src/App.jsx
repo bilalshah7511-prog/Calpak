@@ -498,6 +498,7 @@ export default function App() {
         <CheckoutLoader
           open={checkoutLoading}
           brandLabel={brand.name}
+          logoSrc={brand.logoSrc}
           onDone={finishCheckoutLoader}
         />
 
@@ -683,7 +684,7 @@ export default function App() {
             disabled={!checkoutReady || !inCart}
             onClick={finalCheckout}
           >
-            Continue to checkout
+            CHECKOUT
           </button>
         </div>
 
@@ -1308,7 +1309,7 @@ export default function App() {
           </div>
 
           <button type="button" className="add-to-cart-btn" onClick={addToCart}>
-            ${unitPrice.toFixed(2)} — Add to Bag
+            Add — ${unitPrice.toFixed(2)}
           </button>
 
           <div className="product-tabs">

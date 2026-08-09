@@ -1,7 +1,49 @@
+/* Site font — user-provided Jost.otf (whole page) */
 @font-face {
   font-family: 'Jost';
   src: url('/fonts/Jost.otf') format('opentype');
   font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Cart drawer only — Calpak.com reference Jost weights */
+@font-face {
+  font-family: 'Jost Drawer';
+  src:
+    url('/fonts/Jost-400.woff2') format('woff2'),
+    url('/fonts/Jost-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost Drawer';
+  src:
+    url('/fonts/Jost-500.woff2') format('woff2'),
+    url('/fonts/Jost-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost Drawer';
+  src:
+    url('/fonts/Jost-600.woff2') format('woff2'),
+    url('/fonts/Jost-600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost Drawer';
+  src:
+    url('/fonts/Jost-600.woff2') format('woff2'),
+    url('/fonts/Jost-600.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -17,6 +59,7 @@
   --brand-font: 'Jost', sans-serif;
   --brand-display: var(--brand-font);
   --brand-body: var(--brand-font);
+  --brand-drawer-font: 'Jost Drawer', 'Jost', sans-serif;
   --brand-accent: #111111;
   --brand-cta-bg: #111111;
   --brand-cta-fg: #ffffff;
@@ -42,7 +85,7 @@ body {
   color: var(--ov-black);
 }
 
-/* CALPAK: Jost only — never fall back to other brand fonts */
+/* Site-wide: original Jost.otf */
 *,
 *::before,
 *::after {
@@ -50,12 +93,19 @@ body {
   font-style: normal !important;
 }
 
-/* Aa orientation: sentence case, never all-caps */
+/* Checkout drawer only: Calpak.com reference Jost */
+.cart-drawer,
+.cart-drawer *,
+.cart-drawer *::before,
+.cart-drawer *::after {
+  font-family: var(--brand-drawer-font) !important;
+}
+
+/* Aa orientation: sentence case, never all-caps — except CHECKOUT CTA */
 .announcement-bar__link,
 .logo,
 .product-attrs__label,
 .checkout-sheet__brand,
-.cart-drawer__checkout,
 .checkout-cta,
 .add-to-cart-btn,
 .nav-link,
@@ -65,11 +115,11 @@ body {
 }
 
 .announcement-bar {
-  background: var(--ov-blue);
+  background: #e5e7df;
 }
 
 .announcement-bar__link {
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   font-size: 12px;
 }
@@ -112,9 +162,28 @@ body {
 .checkout-cta {
   background: var(--brand-cta-bg) !important;
   color: var(--brand-cta-fg) !important;
-  border-radius: 999px !important;
+  border-radius: 9px !important;
   border: 2px solid #000 !important;
   font-weight: 700;
+}
+
+/* Match CHECKOUT button height (Confirm delivery / pickup / shipping / Save payment) */
+.checkout-cta,
+.checkout-flow .checkout-cta,
+.checkout-sheet .checkout-cta,
+.checkout-flow--delivery .checkout-cta,
+.checkout-flow--payment .checkout-cta,
+.checkout-flow--shipping .checkout-cta,
+.checkout-flow--verify .checkout-cta {
+  height: 47px !important;
+  min-height: 47px !important;
+  max-height: 47px !important;
+  padding: 0 18px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1em !important;
 }
 
 .add-to-cart-btn:hover,
@@ -249,17 +318,26 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 }
 
 .cart-drawer__checkout {
-  display: block !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   visibility: visible !important;
   opacity: 1 !important;
   width: calc(100% - 16px) !important;
-  margin: 0 8px !important;
-  min-height: 48px !important;
+  margin: 0 8px 8px !important;
+  height: 47px !important;
+  min-height: 47px !important;
+  max-height: 47px !important;
+  padding: 0 18px !important;
+  box-sizing: border-box !important;
+  line-height: 1em !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
 }
 
 .cart-drawer.is-checkout,
 .cart-drawer.is-closing {
-  background: #111111 !important;
+  background: #000000 !important;
   transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1) !important;
 }
 
@@ -313,8 +391,8 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   }
 
   .cart-drawer__logo img {
-    height: 16px !important;
-    max-width: 150px !important;
+    height: 34px !important;
+    max-width: 280px !important;
   }
 
   .cart-drawer__body {
@@ -391,10 +469,14 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 
   .cart-drawer__checkout {
     width: calc(100% - 12px) !important;
-    margin: 0 6px !important;
-    padding: 14px 16px !important;
-    font-size: 15px !important;
-    border-radius: 999px !important;
+    margin: 0 6px 8px !important;
+    height: 47px !important;
+    min-height: 47px !important;
+    max-height: 47px !important;
+    padding: 0 16px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    border-radius: 9px !important;
   }
 
   .cart-item--ov {
@@ -410,7 +492,13 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   }
 
   .cart-item--ov .cart-item__title {
-    font-size: 14px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.2em !important;
+    color: #000000 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .cart-item--ov .cart-item__controls {
@@ -523,9 +611,9 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
 }
 
 .cart-drawer__logo img {
-  height: 18px !important;
+  height: 39px !important;
   width: auto;
-  max-width: 168px;
+  max-width: 308px;
   object-fit: contain;
   filter: none !important;
 }
@@ -575,7 +663,7 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   background: #111111 !important;
   color: #fff !important;
   border: 2px solid #000 !important;
-  border-radius: 999px !important;
+  border-radius: 9px !important;
   text-transform: none !important;
   letter-spacing: 0.02em !important;
 }
@@ -602,7 +690,7 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   min-height: 140px;
   flex: 0 0 110px;
   object-fit: cover;
-  border-radius: 0;
+  border-radius: 9px !important;
   background: var(--ov-sand);
 }
 
@@ -614,6 +702,15 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   border: 0;
   background: transparent;
   cursor: pointer;
+  border-radius: 9px !important;
+  overflow: hidden;
+}
+
+.cart-drawer .cart-item__img,
+.cart-drawer .cart-item__media,
+.cart-drawer .cart-item--ov .cart-item__img,
+.cart-drawer .cart-item--ov .cart-item__media {
+  border-radius: 9px !important;
 }
 
 .cart-item--ov .cart-item__info {
@@ -638,13 +735,63 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   box-shadow: none !important;
 }
 
-.cart-item--ov .cart-item__title {
-  font-family: var(--brand-font) !important;
-  font-weight: 700 !important;
-  font-size: 15px !important;
-  letter-spacing: 0;
-  line-height: 1.3;
-  color: #111 !important;
+.cart-item--ov .cart-item__title-btn {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  text-align: left !important;
+  color: #000000 !important;
+  overflow: visible !important;
+}
+
+/* Match calpaktravel.com CartDrawer .cart__item-title */
+.cart-item--ov .cart-item__title,
+.cart-drawer .cart-item__title,
+.cart-drawer .cart-item--ov .cart-item__title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin: 0 0 0.3em !important;
+  font-family: 'Jost Drawer', 'Jost', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 1.2em !important;
+  letter-spacing: 0 !important;
+  color: #000000 !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
+
+/* Match calpaktravel.com .button--checkout */
+.cart-drawer__checkout {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: calc(100% - 16px) !important;
+  margin: 0 8px 8px !important;
+  height: 47px !important;
+  min-height: 47px !important;
+  max-height: 47px !important;
+  padding: 0 18px !important;
+  box-sizing: border-box !important;
+  font-family: 'Jost Drawer', 'Jost', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1em !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  border-radius: 9px !important;
 }
 
 .cart-item--ov .cart-item__price-wrap {
@@ -720,17 +867,20 @@ html:has(.cart-drawer.is-open)::-webkit-scrollbar {
   width: 18px !important;
   height: 18px !important;
   margin: 0 !important;
+  border-radius: 9px !important;
 }
 
 .cart-drawer__checkout {
   width: calc(100% - 16px) !important;
-  margin: 0 8px !important;
-  font-weight: 600 !important;
+  margin: 0 8px 8px !important;
+  font-family: 'Jost Drawer', 'Jost', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
 .cart-control,
 .cart-control--chip {
-  border-radius: 0 !important;
+  border-radius: 9px !important;
   border: 1px solid #111111 !important;
   background: #fff !important;
 }
@@ -885,9 +1035,9 @@ html.safari-typing .checkout-flow--vv-lock {
 }
 
 .checkout-sheet__brand--logo img {
-  height: 20px;
+  height: 45px !important;
   width: auto;
-  max-width: 180px;
+  max-width: 336px;
   object-fit: contain;
   display: block;
 }
@@ -979,11 +1129,17 @@ html.safari-typing .checkout-flow--vv-lock {
   }
 
   .cart-drawer__checkout {
-    display: block !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     visibility: visible !important;
     opacity: 1 !important;
-    min-height: 48px !important;
-    padding: 14px 18px !important;
+    height: 47px !important;
+    min-height: 47px !important;
+    max-height: 47px !important;
+    padding: 0 18px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
   }
 }
 
@@ -1036,8 +1192,15 @@ html.safari-typing .checkout-flow--vv-lock {
   align-self: center !important;
 }
 
-.size-select__input {
-  border-radius: 0 !important;
+.size-select__wrap {
+  border-radius: 9px !important;
+}
+
+.size-select__input,
+.size-select__input:focus,
+.size-select__input:hover,
+.size-select__wrap:hover .size-select__input {
+  border-radius: 9px !important;
   font-family: var(--brand-font) !important;
   font-size: 16px !important;
   line-height: 1.2 !important;
@@ -1053,6 +1216,34 @@ html.safari-typing .checkout-flow--vv-lock {
   right: 16px !important;
   width: 8px !important;
   height: 8px !important;
+}
+
+/* Cart drawer only — size control bg */
+.cart-drawer .cart-control,
+.cart-drawer .cart-control--chip,
+.cart-drawer .cart-control--size,
+.cart-drawer .cart-control select,
+.cart-drawer .size-select__input,
+.cart-drawer .size-select__input:focus,
+.cart-drawer .size-select__input:hover {
+  background: #e5e7df !important;
+  background-color: #e5e7df !important;
+  color: #111111 !important;
+  border-color: #111111 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.cart-drawer .cart-control select option,
+.cart-drawer .size-select__input option {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+.cart-drawer .cart-control select option:checked,
+.cart-drawer .size-select__input option:checked {
+  background: #e5e7df !important;
+  color: #111111 !important;
 }
 
 .pdp-option {
@@ -1104,7 +1295,7 @@ html.safari-typing .checkout-flow--vv-lock {
 .color-swatch {
   width: 28px;
   height: 28px;
-  border-radius: 0 !important;
+  border-radius: 9px !important;
   border: 1px solid #111;
   cursor: pointer;
   padding: 0;
@@ -1112,13 +1303,14 @@ html.safari-typing .checkout-flow--vv-lock {
 
 .color-swatch.is-active {
   border-color: #111;
+  border-radius: 9px !important;
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px #111;
 }
 
 .site-logo img {
-  height: 22px !important;
+  height: 45px !important;
   width: auto;
-  max-width: 200px;
+  max-width: 336px;
   object-fit: contain;
 }
 
@@ -1176,9 +1368,9 @@ html.safari-typing .checkout-flow--vv-lock {
   }
 
   .site-logo img {
-    height: 16px !important;
+    height: 36px !important;
     width: auto !important;
-    max-width: min(170px, 48vw) !important;
+    max-width: min(308px, 60vw) !important;
     object-fit: contain !important;
   }
 
@@ -1282,7 +1474,7 @@ html.safari-typing .checkout-flow--vv-lock {
   height: 26px;
   display: block;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-radius: 9px;
 }
 
 .checkout-row--payment .checkout-row__title {
@@ -1312,7 +1504,7 @@ html.safari-typing .checkout-flow--vv-lock {
   animation: none;
 }
 
-/* BG: same pace as video (~1.35s) white → #111111 */
+/* BG: white → black only (no other brand colors) */
 .cart-drawer .checkout-loader.is-bg-in {
   animation: checkoutBgShift 1.65s linear forwards;
 }
@@ -1336,16 +1528,18 @@ html.safari-typing .checkout-flow--vv-lock {
   display: none;
 }
 
-.checkout-loader__wordmark {
+.checkout-loader__logo-img {
   display: block;
-  color: #ffffff !important;
-  font-family: var(--brand-font), Helvetica, Arial, sans-serif;
-  font-size: clamp(26px, 7vw, 38px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  white-space: nowrap;
-  text-align: center;
+  height: clamp(39px, 8.4vw, 56px);
+  width: auto;
+  max-width: min(364px, 78vw);
+  object-fit: contain;
+  /* Original logo forced white for black checkout animation */
+  filter: brightness(0) invert(1);
+}
+
+.checkout-loader__wordmark {
+  display: none;
 }
 
 .checkout-loader__stage {
@@ -1384,6 +1578,8 @@ html.safari-typing .checkout-flow--vv-lock {
   max-width: 64px !important;
   max-height: 64px !important;
   display: block;
+  /* Force white check on black bg */
+  filter: brightness(0) invert(1);
 }
 
 .checkout-loader__lottie svg {
@@ -1429,40 +1625,25 @@ html.safari-typing .checkout-flow--vv-lock {
   }
 }
 
-/*
- * Color change matches check (1).mov luminance curve (white→black timing),
- * remapped so the final hex is #111111 instead of #000.
- */
+/* Pure white → black only — no blue / tint colors */
 @keyframes checkoutBgShift {
   0% {
     background-color: #ffffff;
   }
-  8% {
-    background-color: #fafbfd;
+  20% {
+    background-color: #d9d9d9;
   }
-  18% {
-    background-color: #dfe6f2;
+  40% {
+    background-color: #999999;
   }
-  28% {
-    background-color: #a5b7db;
+  60% {
+    background-color: #555555;
   }
-  38% {
-    background-color: #728ec7;
-  }
-  48% {
-    background-color: #5476bb;
-  }
-  58% {
-    background-color: #4065b3;
-  }
-  68% {
-    background-color: #355dae;
-  }
-  78% {
-    background-color: #2d56ab;
+  80% {
+    background-color: #222222;
   }
   100% {
-    background-color: #111111;
+    background-color: #000000;
   }
 }
 
@@ -1990,3 +2171,61 @@ overflow-y: auto !important;
 .checkout-flow--delivery .checkout-field-error--slot.is-empty {
   visibility: hidden;
 }
+
+
+/* CALPAK: 9px radius on buttons, dropdowns, chips, swatches */
+.add-to-cart-btn,
+.checkout-cta,
+.cart-drawer__checkout,
+.total-sheet__close,
+.total-sheet__promo-apply,
+.pdp-sheet__cta,
+.pdp-option,
+.size-select__wrap,
+.size-select__input,
+.size-select__input:focus,
+.size-select__input:hover,
+.size-select__wrap:hover .size-select__input,
+.cart-control,
+.cart-control--chip,
+.color-swatch,
+.color-swatch.is-active,
+.verify-tabs,
+.verify-tab,
+.checkout-input,
+.checkout-select,
+.checkout-flow select.checkout-input,
+.toggle-pair,
+.toggle-pair__btn,
+.option-card,
+.date-pill,
+.time-slot,
+.pickup-location,
+.total-sheet__promo-input {
+  border-radius: 9px !important;
+}
+
+.cart-item--ov .cart-control--color .cart-control__swatch {
+  border-radius: 9px !important;
+}
+
+/* Force Calpak reference Jost on cart title + CHECKOUT only */
+.cart-drawer .cart-item__title,
+.cart-drawer .cart-item--ov .cart-item__title,
+.cart-drawer .cart-item__title-btn,
+.cart-drawer .cart-item__title-btn * {
+  font-family: 'Jost Drawer', 'Jost', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+}
+
+.cart-drawer .cart-drawer__checkout,
+.cart-drawer button.cart-drawer__checkout {
+  font-family: 'Jost Drawer', 'Jost', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  text-transform: uppercase !important;
+}
+
