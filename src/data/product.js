@@ -16,28 +16,28 @@ export const product = {
   serving: 'Best for gym days, daily essentials, and weekend getaways.',
   images: [
   {
-    "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-CHOCOLATE-FRONT_ba74b5e2-df22-46ab-a771-b96d85a9a7d8.jpg?v=1",
+    "src": "/images/product/LUKA-DUFFEL-CHOCOLATE-FRONT_ba74b5e2-df22-46ab-a771-b96d85a9a7d8.jpg",
     "alt": "brown CALPAK Luka duffle bag; DSM1901-CHOCOLATE",
     "showBadge": true
   },
   {
-    "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/PDP_LukaDuffel_Chocolate_93035731-2220-4aef-a716-7597e31f40e5.jpg?v=1",
+    "src": "/images/product/PDP_LukaDuffel_Chocolate_93035731-2220-4aef-a716-7597e31f40e5.jpg",
     "alt": "CALPAK brown Luka duffle bag with features listed on a white background water-resistant material, 9 pockets, and shoe compartment; DSM1901-CHOCOLATE"
   },
   {
-    "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE2_d1549d1a-0448-4a4f-9fda-d6eef667c80d.jpg?v=1",
+    "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE2_d1549d1a-0448-4a4f-9fda-d6eef667c80d.jpg",
     "alt": "brown CALPAK Luka weekender; DSM1901-CHOCOLATE"
   },
   {
-    "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-TOP-CHOCOLATE_a96f9ed4-0ffd-4292-8610-29c998665728.jpg?v=1",
+    "src": "/images/product/LUKA-DUFFEL-TOP-CHOCOLATE_a96f9ed4-0ffd-4292-8610-29c998665728.jpg",
     "alt": "brown CALPAK Luka duffel bag; DSM1901-CHOCOLATE"
   },
   {
-    "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-SHOE-COMPARTMENT-CHOCOLATE_0f265f74-a8cf-4d2d-8e7b-2b32ba0b7db1.jpg?v=1",
+    "src": "/images/product/LUKA-DUFFEL-SHOE-COMPARTMENT-CHOCOLATE_0f265f74-a8cf-4d2d-8e7b-2b32ba0b7db1.jpg",
     "alt": "DSM1901-CHOCOLATE"
   },
   {
-    "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE1_5707b929-6126-4fc7-896a-6a142ba2a390.jpg?v=1",
+    "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE1_5707b929-6126-4fc7-896a-6a142ba2a390.jpg",
     "alt": " CALPAK Luka dufflel bag in brown chocolate color; DSM1901-CHOCOLATE"
   }
 ],
@@ -48,28 +48,28 @@ export const product = {
     "hex": "#4A2C2A",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-CHOCOLATE-FRONT_ba74b5e2-df22-46ab-a771-b96d85a9a7d8.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-CHOCOLATE-FRONT_ba74b5e2-df22-46ab-a771-b96d85a9a7d8.jpg",
         "alt": "brown CALPAK Luka duffle bag; DSM1901-CHOCOLATE",
         "showBadge": true
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/PDP_LukaDuffel_Chocolate_93035731-2220-4aef-a716-7597e31f40e5.jpg?v=1",
+        "src": "/images/product/PDP_LukaDuffel_Chocolate_93035731-2220-4aef-a716-7597e31f40e5.jpg",
         "alt": "CALPAK brown Luka duffle bag with features listed on a white background water-resistant material, 9 pockets, and shoe compartment; DSM1901-CHOCOLATE"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE2_d1549d1a-0448-4a4f-9fda-d6eef667c80d.jpg?v=1",
+        "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE2_d1549d1a-0448-4a4f-9fda-d6eef667c80d.jpg",
         "alt": "brown CALPAK Luka weekender; DSM1901-CHOCOLATE"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-TOP-CHOCOLATE_a96f9ed4-0ffd-4292-8610-29c998665728.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-TOP-CHOCOLATE_a96f9ed4-0ffd-4292-8610-29c998665728.jpg",
         "alt": "brown CALPAK Luka duffel bag; DSM1901-CHOCOLATE"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-SHOE-COMPARTMENT-CHOCOLATE_0f265f74-a8cf-4d2d-8e7b-2b32ba0b7db1.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-SHOE-COMPARTMENT-CHOCOLATE_0f265f74-a8cf-4d2d-8e7b-2b32ba0b7db1.jpg",
         "alt": "DSM1901-CHOCOLATE"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE1_5707b929-6126-4fc7-896a-6a142ba2a390.jpg?v=1",
+        "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-CHOCOLATE-LIFESTYLE1_5707b929-6126-4fc7-896a-6a142ba2a390.jpg",
         "alt": " CALPAK Luka dufflel bag in brown chocolate color; DSM1901-CHOCOLATE"
       }
     ]
@@ -80,28 +80,28 @@ export const product = {
     "hex": "#1A1A1A",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-BLACK-FRONT_1ee94e93-94e0-460e-b2fe-1fe7b36a8c0d.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-BLACK-FRONT_1ee94e93-94e0-460e-b2fe-1fe7b36a8c0d.jpg",
         "alt": "matte black CALPAK Luka duffel bag and weekender; DSM1901-MATTE-BLACK",
         "showBadge": true
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/PDP_LukaDuffel_Black.jpg?v=1",
+        "src": "/images/product/PDP_LukaDuffel_Black.jpg",
         "alt": "CALPAK black Luka duffle bag with features listed on a white background water-resistant material, 9 pockets, and shoe compartment; DSM1901-MATTE-BLACK"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-BLACK-LIFESTYLE2_0b0ed2af-c2ca-4a4c-a724-d4dc1cbe19f1.jpg?v=1",
+        "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-BLACK-LIFESTYLE2_0b0ed2af-c2ca-4a4c-a724-d4dc1cbe19f1.jpg",
         "alt": "matte black CALPAK Luka duffle; DSM1901-MATTE-BLACK"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/Luka-Duffel-Bag-Matte-Black-open_2939824c-0814-4af8-b54a-7458268225b7.jpg?v=1",
+        "src": "/images/product/Luka-Duffel-Bag-Matte-Black-open_2939824c-0814-4af8-b54a-7458268225b7.jpg",
         "alt": "CALPAK Luka matte black: large duffel bag; DSM1901-MATTE-BLACK"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-SHOE-COMPARTMENT-MATTE-BLACK.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-SHOE-COMPARTMENT-MATTE-BLACK.jpg",
         "alt": "DSM1901-MATTE-BLACK"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/Luka-Duffel-Bag-Matte-Black-trolley_191b55b2-be44-493d-8d48-bec7fcb0c5d5.jpg?v=1",
+        "src": "/images/product/Luka-Duffel-Bag-Matte-Black-trolley_191b55b2-be44-493d-8d48-bec7fcb0c5d5.jpg",
         "alt": "matte black CALPAK Luka weekender bag with trolley sleeve; DSM1901-MATTE-BLACK"
       }
     ]
@@ -112,28 +112,28 @@ export const product = {
     "hex": "#E8B4B8",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-ROSE-QUARTZ-FRONT_350f9172-7a68-4e37-b9c3-00cc8a28f81b.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-ROSE-QUARTZ-FRONT_350f9172-7a68-4e37-b9c3-00cc8a28f81b.jpg",
         "alt": "matte pink CALPAK Luka duffel bag and weekender; DSM1901-ROSE-QUARTZ",
         "showBadge": true
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/PDP_LukaDuffel_RoseQuartz.jpg?v=1",
+        "src": "/images/product/PDP_LukaDuffel_RoseQuartz.jpg",
         "alt": "CALPAK light pink Luka duffle bag with features listed on a white background water-resistant material, 9 pockets, and shoe compartment; DSM1901-ROSE-QUARTZ"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-ROSE-QUARTZ-LIFESTYLE1_a698afa4-986a-4cef-a926-3f97b7f899f1.jpg?v=1",
+        "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-ROSE-QUARTZ-LIFESTYLE1_a698afa4-986a-4cef-a926-3f97b7f899f1.jpg",
         "alt": "pink CALPAK Luka duffel bag; DSM1901-ROSE-QUARTZ"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-TOP-ROSE-QUARTZ_d5c424c0-af4d-4621-869e-b95e822909f9.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-TOP-ROSE-QUARTZ_d5c424c0-af4d-4621-869e-b95e822909f9.jpg",
         "alt": "matte pink CALPAK Luka duffle bag for women; DSM1901-ROSE-QUARTZ"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-SHOE-COMPARTMENT-ROSE-QUARTZ_0afd3760-5e79-4624-9a7e-08bbd76cf556.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-SHOE-COMPARTMENT-ROSE-QUARTZ_0afd3760-5e79-4624-9a7e-08bbd76cf556.jpg",
         "alt": "DSM1901-ROSE-QUARTZ"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-MATTE-DUFFEL-BAG-ROSE-QUARTZ-LIFESTYLE3_3d3d383e-0066-4925-b022-1d5a8aede87a.jpg?v=1",
+        "src": "/images/product/LUKA-MATTE-DUFFEL-BAG-ROSE-QUARTZ-LIFESTYLE3_3d3d383e-0066-4925-b022-1d5a8aede87a.jpg",
         "alt": "large duffel bag; DSM1901-ROSE-QUARTZ"
       }
     ]
@@ -144,24 +144,24 @@ export const product = {
     "hex": "#A8C5B8",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/DSM1901_LUKA_DUFFEL-BAG_CELADON_1_461f5e80-d128-4d35-9351-12999a3de1c2.jpg?v=1",
+        "src": "/images/product/DSM1901_LUKA_DUFFEL-BAG_CELADON_1_461f5e80-d128-4d35-9351-12999a3de1c2.jpg",
         "alt": "CALPAK Luka Duffel in light green Celadon; DSM1901-CELADON",
         "showBadge": true
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/WEB_LUKA-DUFFEL_CELADON_2.jpg?v=1",
+        "src": "/images/product/WEB_LUKA-DUFFEL_CELADON_2.jpg",
         "alt": "Person with CALPAK Luka Duffel in light green Celadon; DSM1901-CELADON"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/DSM1901_LUKA_DUFFEL-BAG_CELADON_3_ca6fc5ae-fb27-44e9-a2b3-49531d8e00e4.jpg?v=1",
+        "src": "/images/product/DSM1901_LUKA_DUFFEL-BAG_CELADON_3_ca6fc5ae-fb27-44e9-a2b3-49531d8e00e4.jpg",
         "alt": "Opened CALPAK Luka Duffel in light green Celadon; DSM1901-CELADON"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/DSM1901_LUKA_DUFFEL-BAG_CELADON_2_e6962246-bdb7-42d0-a0e7-b41734fd0b96.jpg?v=1",
+        "src": "/images/product/DSM1901_LUKA_DUFFEL-BAG_CELADON_2_e6962246-bdb7-42d0-a0e7-b41734fd0b96.jpg",
         "alt": "Shoe compartment of CALPAK Luka Duffel in light green Celadon; DSM1901-CELADON"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/DSM1901_LUKA_DUFFEL-BAG_CELADON_5_fbabec5f-5726-4854-8952-49feced20669.jpg?v=1",
+        "src": "/images/product/DSM1901_LUKA_DUFFEL-BAG_CELADON_5_fbabec5f-5726-4854-8952-49feced20669.jpg",
         "alt": "Luggage trolley sleeve of CALPAK Luka Duffel in light green Celadon; DSM1901-CELADON"
       }
     ]
@@ -172,24 +172,24 @@ export const product = {
     "hex": "#D9CBB8",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-FRONT-OATMEAL_1afd777b-3423-418c-903f-52edee234a01.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-FRONT-OATMEAL_1afd777b-3423-418c-903f-52edee234a01.jpg",
         "alt": "CALPAK duffel bag in cream; DSM1901-OATMEAL",
         "showBadge": true
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/PDP_LukaDuffel_Oatmeal.jpg?v=1",
+        "src": "/images/product/PDP_LukaDuffel_Oatmeal.jpg",
         "alt": "CALPAK oatmeal beige Luka duffle bag with features listed on a white background water-resistant material, 9 pockets, and shoe compartment; DSM1901-OATMEAL"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-BAG-OATMEAL-LIFESTYLE-1_99904c0e-4df4-43df-87d6-31fd8ed92e0e.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-BAG-OATMEAL-LIFESTYLE-1_99904c0e-4df4-43df-87d6-31fd8ed92e0e.jpg",
         "alt": "weekender duffel bag with shoe compartment; DSM1901-OATMEAL"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-TOP-OATMEAL_f4694014-952b-4371-a9f3-a70939f51772.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-TOP-OATMEAL_f4694014-952b-4371-a9f3-a70939f51772.jpg",
         "alt": "lightweight Luka duffel bag in cream; DSM1901-OATMEAL"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-BAG-OATMEAL-LUGGAGE-TROLLEY-SLEEVE_a7fdb01b-f6d0-4383-9cdf-c44d1d6eb51b.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-BAG-OATMEAL-LUGGAGE-TROLLEY-SLEEVE_a7fdb01b-f6d0-4383-9cdf-c44d1d6eb51b.jpg",
         "alt": "Luka travel duffel bag with luggage trolley sleeve; DSM1901-OATMEAL"
       }
     ]
@@ -200,24 +200,24 @@ export const product = {
     "hex": "#6B4F3A",
     "images": [
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-FRONT-WALNUT_4d8cc11e-89ee-42a5-9a1d-be62808e4ead.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-FRONT-WALNUT_4d8cc11e-89ee-42a5-9a1d-be62808e4ead.jpg",
         "alt": "CALPAK Luka Duffel bag in walnut brown; DSM1901-WALNUT",
         "showBadge": true
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/PDP_LukaDuffel_Walnut.jpg?v=1",
+        "src": "/images/product/PDP_LukaDuffel_Walnut.jpg",
         "alt": "CALPAK dark brown Luka duffle bag with features listed on a white background water-resistant material, 9 pockets, and shoe compartment; DSM1901-WALNUT"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-WALNUT-LIFESTYLE1_6412dfab-fe84-4da8-9967-5162ff17cf64.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-WALNUT-LIFESTYLE1_6412dfab-fe84-4da8-9967-5162ff17cf64.jpg",
         "alt": "Model holding CALPAK Luka Duffel by handle in dark brown; DSM1901-WALNUT"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-OPEN-WALNUT.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-OPEN-WALNUT.jpg",
         "alt": "Luka weekender bag in walnut; DSM1901-WALNUT"
       },
       {
-        "src": "https://cdn.shopify.com/s/files/1/0941/4996/files/LUKA-DUFFEL-TROLLEY-SLEEVE-WALNUT_ab4f11f9-b9ee-455d-acb4-92dd65068129.jpg?v=1",
+        "src": "/images/product/LUKA-DUFFEL-TROLLEY-SLEEVE-WALNUT_ab4f11f9-b9ee-455d-acb4-92dd65068129.jpg",
         "alt": "CALPAK Luka Duffel bag with luggage trolley sleeve in dark brown walnut; DSM1901-WALNUT"
       }
     ]
